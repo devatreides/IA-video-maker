@@ -1,0 +1,19 @@
+{
+  "name": "ia-video-maker",
+  "version": "1.0.0",
+  "description": "Open Source Project of a Robot Maker System for Automated Media Generation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomfbenevides/IA-video-maker.git"
+  },
+  "author": "Tom Benevides",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomfbenevides/IA-video-maker/issues"
+  },
+  "homepage": "https://github.com/tomfbenevides/IA-video-maker#readme"
+}

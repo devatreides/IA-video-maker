@@ -1,6 +1,9 @@
 const readline = require('readline-sync')
+const robots ={
+	text: require('./robots/text.js')
+}
 
-function start(){
+async function start(){
 	const content = {}
 
 	/** ---------------------------------------- 
@@ -11,6 +14,8 @@ function start(){
 	content.searchTerm = askAndReturnSearchTerm()
 	//Atributing a new property to content that receive the prefix to make a more human content, taking into account the language
 	content.prefix = askAndReturnPrefix()
+	//
+	await robots.text(content)
 
 
 	/** ---------------------------------------

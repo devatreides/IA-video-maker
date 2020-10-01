@@ -32,10 +32,7 @@ async function robot(content){
         function removeBlankLinesAndMarkDown(text){
             const allLines = text.split('\n')
             const withoutBlankLinesAndMarkDown = allLines.filter((line) => {
-                if(line.trim().length === 0 || line.trim().startsWith('=')){
-                    return  false
-                }
-                return true
+                return !(line.trim().length === 0 || line.trim().startsWith('='))
             })
 
             return withoutBlankLinesAndMarkDown.join(' ')
